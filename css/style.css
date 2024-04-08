@@ -36,6 +36,7 @@ h2{
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
+    padding: auto;
     text-align: center;
 
 }
@@ -153,7 +154,7 @@ a {
 .logo {
     width: Hug 161.09px;
     height: Hug  79px;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 30px 0px;
     gap: 10px;    
 }
 
@@ -198,8 +199,8 @@ a {
 
 .search_bar {
     display: flex;
-    width: Fixed 377px;
-    height: Fixed 49px;
+    width: 377px;
+    height: 49px;
     gap: 24px;
     border-radius: 15px 0px 0px 0px;
     border: 1px 0px 0px 0px;
@@ -253,29 +254,22 @@ a {
 }
 
 .parametres_filtres{
-    padding: 4px 19px 4px 19px;
+    padding: 12px 19px 4px 19px;
     gap: 10px;
     color: black; 
     border-radius: 25px 25px 25px 25px;
-    border: 2px 2px 2px 2px; 
 }
 
-.taille_filtre_economique{
+
+.filtre_economique {
     display: flex;
     flex-direction: row;
     width: 173px;
-    height: Fixed 50px;
-
-}
-
-.filtre_economique {
-    width: Hug 173px;
-    height: Fixed 50px;
+    height: 50px;
     font-size: 17px;
     font-weight: 700;
     line-height: 19.96px;
     text-align: left;
-    padding: 20px;
     background-color: white;
     border: 2px solid #D9D9D9
 }
@@ -283,44 +277,38 @@ a {
 .logo_filtre{
     width: 22px;
     height: 22px;
-    margin: auto;    
-}
-
-.taille_filtre_familial{
-    display: flex;
-    flex-direction: row;
-    width: 134px;
-    height: Fixed 50px;
+        
 }
 
 .filtre_familial{
-    width: Hug 134px;
-    height: Fixed 50px;
+    display: flex;
+    flex-direction: row;
+    width: 134px;
+    height: 50px;
     font-size: 17px;
     font-weight: 700;
     line-height: 19.96px;
     text-align: left;
-    padding: 20px;
     background-color: white;
     border: 2px solid #D9D9D9
 }
 
 .taille_filtre_romantique{
-    display: flex;
-    flex-direction: row;
+
     width: 170px;
     height: Fixed 50px;
 }
 
 
 .filtre_romantique{
-    width: Hug 170px;
-    height: Fixed 50px;
+    display: flex;
+    flex-direction: row;
+    width: 170px;
+    height: 50px;
     font-size: 17px;
     font-weight: 700;
     line-height: 19.96px;
     text-align: left;
-    padding: 20px;
     background-color: white;
     border: 2px solid #D9D9D9
 }
@@ -334,13 +322,14 @@ a {
 }
 
 .filtre_pepites{
-    width: Hug 167px;
-    height: Fixed 50px;
+    display: flex;
+    flex-direction: row;
+    width: 175px;
+    height: 50px;
     font-size: 17px;
     font-weight: 700;
     line-height: 19.96px;
     text-align: left;
-    padding: 20px;
     background-color: white;
     border: 2px solid #D9D9D9
 }
@@ -356,18 +345,16 @@ a {
 .infobar{
     display: flex;
     flex-direction: row;
-    width: Fill 1,340px;
-    height: Fixed 24px;
+    align-items: center;
     gap: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .taille_logo_info{
-    width: Hug 24px;
-    height: Fixed 24px;
-    margin-right: 10px;
-    border-radius: 1px 1px 1px 1px;
-    border: 1px solid #D9D9D9
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #DEEBFF
 }
 
 .logo_info{
@@ -378,7 +365,12 @@ a {
    
 }
 
-
+.text_info{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    padding-bottom: 12px;  
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
