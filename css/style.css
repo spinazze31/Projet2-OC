@@ -423,6 +423,35 @@ a {
     padding: 0px 15px 0px 15px;
     justify-content: left;
 }
+
+.hebergement-txt{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: left;
+    padding-top: 22px;
+}
+
+/********* Section Activités *********/
+
+.activite{
+    width: Fill 1,340px;
+    height: Hug 559.02px;
+    padding: 30px 0px 0px 0px;
+    gap: 30px;
+    display: flex;
+
+}
+
+.activite-txt{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: left;
+    padding: 15px 0px 0px 28px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
