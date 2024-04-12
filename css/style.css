@@ -436,9 +436,9 @@ a {
 /********* Section Activités *********/
 
 .activity{
-    width: Fill 1,340px;
-    height: Hug 559.02px;
-    padding: 30px 0px 60px 0px;
+    width: 1,340px;
+    height: 559.02px;
+    padding: 30px 0px 40px 0px;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -464,7 +464,6 @@ a {
 
 .photo-card{
     background-color: white;
-    border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -481,7 +480,7 @@ a {
 
 .photo-size{
     width: 100%;
-    height: 88%;
+    height: 92%;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -496,11 +495,12 @@ a {
 /******** Zone Footer ********/
 
 .zone_footer{
-    width: 1,340px;
-    height: 163px;
+    width: Fill 1,340px;
+    height: Hug 163px;
     background: #F2F2F2;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
 }
 
 .footer-card{
