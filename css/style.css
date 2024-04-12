@@ -438,7 +438,7 @@ a {
 .activity{
     width: Fill 1,340px;
     height: Hug 559.02px;
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0px 60px 0px;
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -476,6 +476,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1);
+
 }
 
 .photo-size{
@@ -491,6 +492,44 @@ a {
     text-align: left;
     padding-left: 10px;
 }
+
+/******** Zone Footer ********/
+
+.zone_footer{
+    width: 1,340px;
+    height: 163px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-card{
+    width: 446.67px;
+    height: 163px;
+    padding: 10px 0px 0px 0px;
+    gap: 15px;
+}
+
+.titre{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: left; 
+    padding-left: 28px;
+}
+
+.liste{
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+    padding-inline-start: 0px;
+    padding-left: 28px;
+    list-style-type: none;
+}
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
