@@ -17,7 +17,7 @@
 <body>
     <div class="main-container">
         <header class="appBar">
-              <img class="logo taille_logo" 
+              <img class="logo logo-size" 
                src="./images/logo/Booki.png" alt="logo de l'agence">
         
             <div class="appBar_nav menu">
@@ -26,47 +26,51 @@
             </div>
         </header>
         <main>
-            <section class="zone_menu">
+            <section class="menu-area">
                 <div class="header_menu">
                   <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                   <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                <div class="search_bar">
                   <form method="get" action="">
-                    <div class="logo_localisation" >
+                    <div class="logo_location" >
                        <img src="./images/logo/Localisation.png" alt="logo localisation">
-                          <label for="recherche"></label> <input type="text" name="recherche" id="recherche" placeholder="Votre recherche" class="taille_texte">                        
-                          <input class="button" type="submit" value="Rechercher">                     
+                            <label for="recherche"></label> <input type="text" name="recherche" id="recherche" placeholder="Votre recherche" size="22" class="text-size">  
+                            <button class="button">
+                                <input class="phone-search-logo" type="image" id="image" alt="loupe de recherche"
+                                    src="./images/logo/loupe.png">
+                                <span class="text-button-search">Rechercher</span>       
+                           </button>                        
                     </div>
                   </form>
                </div>
-               
-                <div class="menu-filters">
+
+               <div class="filters-menu">
                     <h2>Filtres</h2>
                  
                     <form method="get" action="">
                       <div class="filters">
-                        <button class="parametres_filtres filtre_economique">
+                        <button class="filter-settings economical-filter">
                             <input type="image" id="image" alt="logo economique"
-                                src="./images/logo/logo_economique.png" class="logo_filtre">
+                                src="./images/logo/logo_economique.png" class="filter-logo">
                              Economique
                         </button>
 
-                        <button class=" parametres_filtres filtre_familial">
+                        <button class="filter-settings family-filter">
                             <input type="image" id="image" alt="logo familial"
-                                src="./images/logo/logo_famille.png" class="logo_filtre">
+                                src="./images/logo/logo_famille.png" class="filter-logo">
                             Familial
                         </button>
 
-                        <button class="parametres_filtres filtre_romantique ">
+                        <button class="filter-settings romantic-filter">
                             <input type="image" id="image" alt="logo romantique"
-                                src="./images/logo/logo_romantique.png" class="logo_filtre">
+                                src="./images/logo/logo_romantique.png" class="filter-logo">
                             Romantique
                         </button>
 
-                        <button class="parametres_filtres filtre_pepites">
+                        <button class="filter-settings nugget-filter">
                             <input type="image" id="image" alt="logo nos pépites"
-                                src="./images/logo/logo_pepites.png" class="logo_filtre">
+                                src="./images/logo/logo_pepites.png" class="filter-logo">
                             Nos Pépites
                         </button>
                       </div>
@@ -74,10 +78,10 @@
                 </div>
                  
                 <div class="infobar">
-                      <img class="taille_logo_info logo_info"
+                      <img class="size-logo-info logo_info"
                          src="./images/logo/logo_info.png" alt="logo info">
                     <p>
-                        <div class="text_info">
+                        <div class="info-text">
                             Plus de 500 logements sont disponibles dans cette ville
                         </div>
                     </p>
@@ -91,10 +95,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/fred-kleber.jpg">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image d'une chambre avec un lit et une fenêtre">
-                                    <h3 class="card-hebergement-title">Hôtel du port</h3>
+                                    <h3 class="hebergement-card-title">Hôtel du port</h3>
                             </a>
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -108,10 +112,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/febrian-zakaria.jpg">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image d'une chambre avec un lit et un bureau">
-                                     <h3 class="card-hebergement-title">Hôtel Chez Amina</h3>
+                                     <h3 class="hebergement-card-title">Hôtel Chez Amina</h3>
                             </a>         
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -123,10 +127,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/reisetopia.jpg">
                                 <img src="./images/hebergements/reisetopia.jpg" alt="Image d'une chambre avec un lit et un placard">    
-                                    <h3 class="card-hebergement-title">Hôtel Les mouettes</h3>
+                                    <h3 class="hebergement-card-title">Hôtel Les mouettes</h3>
                             </a>
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -138,10 +142,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/annie-spratt.jpg">
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image d'une chambre avec un lit et un tableau au mur dans les tons de bleu">    
-                                    <h3 class="card-hebergement-title">Hôtel de la mer</h3>
+                                    <h3 class="hebergement-card-title">Hôtel de la mer</h3>
                             </a>   
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>  
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -153,10 +157,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/marcus-loke.jpg">
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image d'une chambre avec un lit superposé">   
-                                    <h3 class="card-hebergement-title">Auberge La Canebière</h3>
+                                    <h3 class="hebergement-card-title">Auberge La Canebière</h3>
                             </a>
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -168,10 +172,10 @@
                         <article class="card card-size">
                             <a href="./images/hebergements/nicate-lee.jpg">
                                 <img src="./images/hebergements/nicate-lee.jpg" alt="Image d'une chambre avec 2 lits superposés">   
-                                    <h3 class="card-hebergement-title">Auberge Le Panier</h3>
+                                    <h3 class="hebergement-card-title">Auberge Le Panier</h3>
                             </a>
-                                    <p class="card-hebergement-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
-                                <div class="card-hebergement-rating">
+                                    <p class="hebergement-card-subtitle">Nuit à partir de 23<span class="euro">€</span></p>
+                                <div class="hebergement-card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -283,10 +287,10 @@
                  </div>
             </section>
         </main>
-        <footer class="zone_footer">
+        <footer class="footer-area">
             <div class="footer-card">
-                <h1 class="titre">A propos</h1>
-                <ul class="liste">
+                <h1 class="title">A propos</h1>
+                <ul class="list">
                     <li>
                         <a href="Fonctionnement du site">Fonctionnement du site</a>
                     </li>
@@ -301,8 +305,8 @@
                 </ul>
             </div>
             <div class="footer-card">
-                <h1 class="titre">Nos hébergements</h1>
-                <ul class="liste">
+                <h1 class="title">Nos hébergements</h1>
+                <ul class="list">
                     <li>
                         <a href="Charte qualité">Charte qualité</a>
                     </li>
@@ -313,8 +317,8 @@
                 </ul>
             </div>
             <div class="footer-card">
-                <h1 class="titre">Assistance</h1>
-                <ul class="liste">
+                <h1 class="title">Assistance</h1>
+                <ul class="list">
                     <li>
                         <a href="Centre d'aide">Centre d'aide</a>
                     </li>

@@ -157,12 +157,12 @@ a {
 
 .logo {
     width: Hug 161.09px;
-    height: Hug  79px;
+    height: Hug 79px;
     padding: 30px 0px 30px 0px;
     gap: 10px;    
 }
 
-.taille_logo {
+.logo-size {
     width: Hug 61.09px;
     height: Hug 19px;
     top: 30px;
@@ -195,7 +195,7 @@ a {
 
 /******** Section filtres ******/
 
-.zone_menu {
+.menu-area {
     display: flex;
     flex-direction: column;
     height: Hug 281px;
@@ -209,34 +209,30 @@ a {
 
 .search_bar {
     display: flex;
-    width: 377px;
+    width: 389px;
     height: 49px;
     gap: 24px;
-    border-radius: 15px 0px 0px 0px;
-    border: 1px 0px 0px 0px;
     background: #FFFFFF;
-    border: 1px solid- -main-bg-color #F2F2F2;
+    border-width: 1px solid;
+    border-color: -main-bg-color #F2F2F2;
     padding-top: 20px;     
 }
 
-.logo_localisation {
+.logo_location {
     display: flex;
     width: 50px;
     height: 49px;
     border-radius: 15px, 0px, 0px, 15px;
-    border: 1px 0px 0px 0px;
-    border: 1px solid --main-bg-color #F2F2F2;  
 }
 
 
-.taille_texte {
-    width: Fixed 227px;
+.text-size {
+    width: 200px;
     height: Fixed 49px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
     text-align: center;
-    color: black;
 }
 
 .button {
@@ -250,13 +246,16 @@ a {
     padding: 15px 16px 15px 16px;
     gap: 10px;
     border-radius: 0px 15px 15px 0px;
-    border: 1px 0px 0px 0px;
     background: var(--main-color);
-    border: 1px solid var(--main-color);;
+    border: 1px solid var(--main-color);
     color: white; 
 }
 
-.menu-filters {
+.phone-search-logo {
+    display: none;
+}
+
+.filters-menu {
     display: flex;
     flex-direction: row;
     width: 780px;
@@ -270,7 +269,7 @@ a {
     gap: 15px;
 }
 
-.parametres_filtres{
+.filter-settings {
     padding: 12px 19px 4px 19px;
     gap: 10px;
     color: black; 
@@ -278,7 +277,7 @@ a {
 }
 
 
-.filtre_economique {
+.economical-filter {
     display: flex;
     flex-direction: row;
     width: 173px;
@@ -291,13 +290,13 @@ a {
     border: 2px solid #D9D9D9
 }
 
-.logo_filtre {
+.filter-logo {
     width: 22px;
     height: 22px;
         
 }
 
-.filtre_familial {
+.family-filter {
     display: flex;
     flex-direction: row;
     width: 134px;
@@ -310,13 +309,10 @@ a {
     border: 2px solid #D9D9D9
 }
 
-.taille_filtre_romantique {
-    width: 170px;
-    height: Fixed 50px;
-}
 
 
-.filtre_romantique {
+
+.romantic-filter {
     display: flex;
     flex-direction: row;
     width: 170px;
@@ -330,14 +326,7 @@ a {
 }
 
 
-.taille_filtre_pepites {
-    display: flex;
-    flex-direction: row;
-    width: Hug 167px;
-    height: Fixed 50px;
-}
-
-.filtre_pepites {
+.nugget-filter {
     display: flex;
     flex-direction: row;
     width: 175px;
@@ -351,10 +340,10 @@ a {
 }
 
 
-.filtre_economique:hover,
-.filtre_familial:hover,
-.filtre_romantique:hover,
-.filtre_pepites:hover {
+.economical-filter:hover,
+.family-filter:hover,
+.romantic-filter:hover,
+.nugget-filter:hover {
     background: #DEEBFF;
 }
 
@@ -366,7 +355,7 @@ a {
     padding-bottom: 20px;
 }
 
-.taille_logo_info {
+.size-logo-info {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 50%;
@@ -381,7 +370,7 @@ a {
    
 }
 
-.text_info {
+.info-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
@@ -414,7 +403,7 @@ a {
     border-top-right-radius: 20px;
 }
 
-.card-hebergement-title {
+.hebergement-card-title {
     font-size: 16px;
     font-weight: 700;
     line-height: 18.78px;
@@ -425,7 +414,7 @@ a {
     margin-bottom: 6px;
 }
 
-.card-hebergement-subtitle {
+.hebergement-card-subtitle {
     font-size: 14px;
     font-weight: 400;
     line-height: 16.44px;
@@ -434,7 +423,7 @@ a {
     margin: 0;
 }
 
-.card-hebergement-rating {
+.hebergement-card-rating {
     margin: 6px 0px 5px 0px;
     padding: 0px 15px 0px 15px;
     justify-content: left;
@@ -510,7 +499,7 @@ a {
 
 /******** Zone Footer ********/
 
-.zone_footer {
+.footer-area {
     width: Fill 1,340px;
     height: Hug 163px;
     background: #F2F2F2;
@@ -526,7 +515,7 @@ a {
     gap: 15px;
 }
 
-.titre {
+.title {
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
@@ -534,7 +523,7 @@ a {
     padding-left: 28px;
 }
 
-.liste {
+.list {
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
@@ -555,15 +544,14 @@ a {
         display: flex;
         width: 377px;
         height: 49px;
-        gap: 24px;
-        border-radius: 15px 0px 0px 0px;
-        border: 1px 0px 0px 0px;
-        background: #FFFFFF;
-        border: 1px solid- -main-bg-color #F2F2F2; 
         padding-top: 40px;
     }
+
+    .text-size {
+        width: 187px;
+    }
    
-    .menu-filters {
+    .filters-menu {
         display: flex;
         flex-direction: column;
         width: 780px;
@@ -669,6 +657,7 @@ a {
         width: 100%;
         max-width: 767.98px;
         padding: 0px;
+        margin-left: 5px;
         box-sizing: border-box;
     }
     
@@ -685,7 +674,7 @@ a {
     }
 
 
-    .taille_logo {
+    .logo-size {
         width: 61.09px;
         height: 19px;
         
@@ -707,7 +696,7 @@ a {
     }
 
 
-    .zone_menu {
+    .menu-area {
         margin-top: 20px;
         width: Fill 375px;
         height: Hug 432px;
@@ -715,13 +704,43 @@ a {
     }
 
     .header_menu {
-        width: 335px;
+        width: 100%;
         height: 79px;
         gap: 8px;
         padding-top: 20px;
     }
 
-    .menu-filters {
+    .search_bar{
+        width: 100%;
+    }
+
+    .text-size {
+        width: 350px;
+        border-right: 0px;
+        border-left: 0px;
+        border-top-width: 1px;
+    }
+
+    .button {
+        width: 49px;
+        height: 49px;
+        left: 317px;
+        padding: 15px 16px 15px 16px;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        z-index: 1; 
+    }
+
+    .phone-search-logo {
+        display: initial;
+    }
+
+    .text-button-search{
+        display: none;
+    }
+
+    .filters-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -735,13 +754,14 @@ a {
         flex-wrap: wrap;
     }
 
-    .filtre_economique, 
-    .filtre_familial,
-    .filtre_romantique, 
-    .filtre_pepites {
+    .economical-filter, 
+    .family-filter,
+    .romantic-filter, 
+    .nugget-filter {
         width: 170px;
         height: 50px;
     }
+
 
     .infobar {
         padding: 0px;
@@ -767,15 +787,16 @@ a {
         gap: 10px;
     }
 
-    .populaires{
+    .populaires {
         order: -1;
+        margin-top: 20px;
     }
 
 
     .activity {
-        
         height: 965.02px;
-        padding: 30px 0px 0px 0px;
+        padding-top: 0px;
+        padding-bottom: 10px;
         gap: 30px;
     }
 
@@ -794,7 +815,7 @@ a {
         height: 200px;
     }
 
-    .zone_footer {
+    .footer-area {
         flex-direction: column;
         margin-top: 40px;
     }
