@@ -132,20 +132,13 @@ a {
 }
 
 .logo {
-  width: Hug 161.09px;
-  height: Hug 79px;
+  width: 70px;
+  height: 22px;
   padding: 30px 0px 30px 0px;
-  gap: 10px;
-}
-
-.logo-size {
-  width: Hug 61.09px;
-  height: Hug 19px;
-  top: 30px;
-  left: 50px;
 }
 
 .appBar_nav {
+  display: flex;
   flex-direction: row;
 }
 
@@ -172,12 +165,12 @@ a {
 .menu-area {
   display: flex;
   flex-direction: column;
-  height: Hug 281px;
+  height: 345px;
   gap: 35px;
 }
 
 .header_menu {
-  width: 1, 340px;
+  width: 100%;
   height: 53px;
 }
 
@@ -201,7 +194,7 @@ a {
   height: 49px;
   gap: 24px;
   background: #ffffff;
-  border-width: 1px solid;
+  border-width: 1px;
   border-color: -main-bg-color #f2f2f2;
   padding-top: 20px;
 }
@@ -210,12 +203,12 @@ a {
   display: flex;
   width: 50px;
   height: 49px;
-  border-radius: 15px, 0px, 0px, 15px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .text-size {
   width: 200px;
-  height: Fixed 49px;
+  height: 43px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.13px;
@@ -256,7 +249,6 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.13px;
-  padding: auto;
   text-align: center;
 }
 
@@ -362,7 +354,7 @@ a {
 .info-text {
   font-size: 16px;
   font-weight: 400;
-  line-height: 18.78px;
+  line-height: 25px;
 }
 
 /******* Section Hébergement ********/
@@ -429,7 +421,7 @@ a {
 /********* Section Activités *********/
 
 .activity {
-  width: 1, 340px;
+  width: 100%;
   height: 559.02px;
   padding: 30px 0px 40px 0px;
   gap: 30px;
@@ -446,12 +438,12 @@ a {
 }
 
 .activity-card {
-  width: 1, 280px;
+  width: 100%;
   height: 439px;
   gap: 30px;
   display: flex;
   flex-direction: row;
-  margin-left: 28px;
+  margin: 0px 10px 0px 10px;
 }
 
 .photo-card {
@@ -486,8 +478,8 @@ a {
 /******** Zone Footer ********/
 
 .footer-area {
-  width: Fill 1, 340px;
-  height: Hug 163px;
+  width: 100%;
+  height: 163px;
   background: #f2f2f2;
   display: flex;
   flex-direction: row;
@@ -524,6 +516,10 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .menu-area {
+    height: 392px;
+  }
+
   .search_bar {
     display: flex;
     width: 377px;
@@ -615,6 +611,10 @@ a {
     height: 390px;
   }
 
+  .activity-card {
+    margin: 0;
+  }
+
   .activity-cards-size {
     width: 100%;
     height: 270px;
@@ -660,46 +660,58 @@ a {
     margin: 10px 0px 10px 0px;
   }
 
-  .logo-size {
-    width: 61.09px;
-    height: 19px;
-  }
-
   .appBar_nav {
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: Hug 36px;
-    gap: 15px;
+    gap: 0;
   }
 
   .line {
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-underline-offset: 20px;
-    text-decoration-thickness: 3px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-bottom: 20px;
+    border-bottom: solid var(--main-color) 4px;
+    border-top: none;
+  }
+
+  .grey_line {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 10px 0px 20px 0px;
+    border-bottom: solid var(--main-bg-color) 4px;
   }
 
   .menu-area {
     margin-top: 20px;
-    width: Fill 375px;
-    height: Hug 432px;
+    width: 100%;
+    height: 525px;
     gap: 35px;
   }
 
   .header_menu {
     width: 100%;
     height: 79px;
-    gap: 8px;
     padding-top: 20px;
   }
 
+  .header_menu--title {
+    padding-left: 32px;
+  }
+
+  .header_menu--paragraph {
+    padding-left: 32px;
+  }
+
   .search_bar {
-    width: 100%;
+    width: 335px;
+    padding-left: 22px;
   }
 
   .text-size {
-    width: 350px;
+    width: 235px;
     border-right: 0px;
     border-left: 0px;
     border-top-width: 1px;
@@ -707,13 +719,10 @@ a {
 
   .button {
     width: 49px;
-    height: 49px;
-    left: 317px;
-    padding: 15px 16px 15px 16px;
+    left: 300px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     position: absolute;
-    z-index: 1;
   }
 
   .phone-search-logo {
@@ -732,10 +741,15 @@ a {
     gap: 15px;
   }
 
+  .filters-menu-title {
+    padding-left: 32px;
+  }
+
   .filters {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .economical-filter,
@@ -747,8 +761,8 @@ a {
   }
 
   .infobar {
-    padding: 0px;
-    margin-bottom: 30px;
+    padding: 0px 0px 0px 32px;
+    margin-bottom: 20px;
   }
 
   .hebergements-and-populaires section {
