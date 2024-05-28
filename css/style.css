@@ -823,5 +823,6 @@ a {
     flex-direction: column;
     margin-top: 40px;
     height: 460px;
+    width: 100%;
   }
 }
