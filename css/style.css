@@ -166,7 +166,6 @@ a {
 .menu-area {
   display: flex;
   flex-direction: column;
-  height: 345px;
   gap: 35px;
 }
 
@@ -341,6 +340,7 @@ a {
   align-items: center;
   gap: 10px;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .size-logo-info {
@@ -348,13 +348,6 @@ a {
   padding: 10px;
   border-radius: 50%;
   border: 2px solid #deebff;
-}
-
-.logo_info {
-  width: 4px;
-  height: 10px;
-  top: 7px;
-  left: 10px;
 }
 
 .info-text {
@@ -523,10 +516,6 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  .menu-area {
-    height: 392px;
-  }
-
   .search_bar {
     display: flex;
     width: 372px;
@@ -566,7 +555,7 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding-top: 25px;
+    padding-top: 35px;
   }
 
   .hebergements-and-populaires {
@@ -690,7 +679,6 @@ a {
   .menu-area {
     margin-top: 20px;
     width: 100%;
-    height: 525px;
     gap: 35px;
   }
 
@@ -709,12 +697,12 @@ a {
   }
 
   .search_bar {
-    width: 320px;
-    margin-left: 22px;
+    width: 285px;
+    margin-left: 20px;
   }
 
   .search_text {
-    width: 235px;
+    width: 200px;
     border-right: 0px;
     border-left: 0px;
     border-top-width: 1px;
@@ -722,10 +710,10 @@ a {
 
   .button {
     width: 49px;
-    left: 300px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: relative;
+    right: 15px;
   }
 
   .phone-search-logo {
@@ -740,7 +728,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 280px;
+    height: 200px;
     gap: 15px;
   }
 
