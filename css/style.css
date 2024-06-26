@@ -196,7 +196,7 @@ a {
   background: #ffffff;
   border: solid 2px var(--main-bg-color);
   border-radius: 17px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .logo_location {
@@ -243,6 +243,7 @@ a {
   width: 780px;
   height: 50px;
   gap: 15px;
+  margin-top: 5px;
 }
 
 .filters-menu-title {
@@ -254,14 +255,19 @@ a {
   text-align: center;
 }
 
-.filters__columns {
+.filters__column {
+  display: flex;
+  gap: 12px;
+}
+
+.filters {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 12px;
 }
 
 .filter-settings {
-  padding: 5px 19px 4px 19px;
+  padding: 4px 18px 4px 18px;
   gap: 10px;
   color: black;
   border-radius: 25px 25px 25px 25px;
@@ -271,7 +277,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 173px;
+  width: 167px;
   height: 50px;
   font-size: 17px;
   font-weight: 700;
@@ -290,7 +296,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 134px;
+  width: 125px;
   height: 50px;
   font-size: 17px;
   font-weight: 700;
@@ -304,7 +310,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 170px;
+  width: 160px;
   height: 50px;
   font-size: 17px;
   font-weight: 700;
@@ -318,7 +324,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 175px;
+  width: 163px;
   height: 50px;
   font-size: 17px;
   font-weight: 700;
@@ -340,8 +346,8 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  padding-bottom: 20px;
-  margin-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 30px;
 }
 
 .size-logo-info {
@@ -718,7 +724,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 180px;
     gap: 15px;
   }
 
@@ -728,25 +734,33 @@ a {
 
   .filters {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filters__column {
+    display: flex;
+    gap: 12px;
     flex-direction: column;
     align-items: center;
-  }
-
-  .filters__columns {
-    column-count: 2;
-    display: initial;
-  }
-
-  .filter-settings {
-    margin-bottom: 20px;
+    justify-content: center;
   }
 
   .economical-filter,
   .family-filter,
   .romantic-filter,
   .nugget-filter {
-    width: 170px;
-    height: 50px;
+    width: 162.5px;
+    font-size: 14px;
+  }
+
+  .family-filter {
+    gap: 16px;
+  }
+
+  .romantic-filter {
+    gap: 12px;
   }
 
   .infobar {
