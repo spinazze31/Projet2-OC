@@ -44,31 +44,22 @@
               En plein centre-ville ou en pleine nature
             </p>
           </div>
-          <div class="search_bar">
-            <form>
-              <div class="logo_location">
-                <img
-                  src="./images/logo/Localisation.png"
-                  alt="logo localisation"
-                />
+          <div>
+            <form class="search_bar">
+              <i class="fa-solid fa-location-dot logo_location"></i>
 
-                <input
-                  type="text"
-                  name="recherche"
-                  id="text"
-                  placeholder="Votre recherche"
-                  size="22"
-                  class="search_text"
-                />
-                <button class="button">
-                  <img
-                    class="phone-search-logo"
-                    src="./images/logo/loupe.png"
-                    alt="logo loupe de recherche"
-                  />
-                  <span class="text-button-search">Rechercher</span>
-                </button>
-              </div>
+              <input
+                type="text"
+                name="recherche"
+                id="text"
+                placeholder="Votre recherche"
+                size="22"
+                class="search_text"
+              />
+              <button class="button">
+                <i class="fa-solid fa-magnifying-glass phone-search-logo"></i>
+                <span class="text-button-search">Rechercher</span>
+              </button>
             </form>
           </div>
 
@@ -76,50 +67,34 @@
             <h2 class="filters-menu-title">Filtres</h2>
 
             <div class="filters">
-              <button class="filter-settings economical-filter">
-                <img
-                  src="./images/logo/logo_economique.png"
-                  alt="logo economique"
-                  class="filter-logo"
-                />
-                Economique
-              </button>
+              <div class="filters__columns">
+                <button class="filter-settings economical-filter">
+                  <i class="fa-solid fa-money-bill-wave filter-logo"></i>
+                  Economique
+                </button>
 
-              <button class="filter-settings family-filter">
-                <img
-                  src="./images/logo/logo_famille.png"
-                  alt="logo famille"
-                  class="filter-logo"
-                />
-                Familial
-              </button>
-              <button class="filter-settings romantic-filter">
-                <img
-                  src="./images/logo/logo_romantique.png"
-                  alt="logo coeur"
-                  class="filter-logo"
-                />
-                Romantique
-              </button>
+                <button class="filter-settings family-filter">
+                  <i class="fa-solid fa-person filter-logo"></i>
 
-              <button class="filter-settings nugget-filter">
-                <img
-                  src="./images/logo/logo_pepites.png"
-                  alt="logo pépites"
-                  class="filter-logo"
-                />
-                Nos Pépites
-              </button>
+                  Familial
+                </button>
+
+                <button class="filter-settings romantic-filter">
+                  <i class="fa-solid fa-heart filter-logo"></i>
+                  Romantique
+                </button>
+
+                <button class="filter-settings nugget-filter">
+                  <i class="fa-solid fa-fire filter-logo"></i>
+                  Nos Pépites
+                </button>
+              </div>
             </div>
           </div>
         </section>
         <section>
           <div class="infobar">
-            <img
-              class="size-logo-info"
-              src="./images/logo/logo_info.png"
-              alt="logo info"
-            />
+            <i class="fa-solid fa-info size-logo-info size-logo-info"></i>
             <div class="info-text">
               Plus de 500 logements sont disponibles dans cette ville
             </div>

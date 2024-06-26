@@ -192,7 +192,7 @@ a {
   display: flex;
   width: 385px;
   height: 49px;
-  gap: 24px;
+
   background: #ffffff;
   border: solid 2px var(--main-bg-color);
   border-radius: 17px;
@@ -201,14 +201,16 @@ a {
 
 .logo_location {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: black;
   width: 50px;
-  height: 49px;
   border-radius: 15px 0px 0px 15px;
 }
 
 .search_text {
   width: 200px;
-  height: 43px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.13px;
@@ -218,12 +220,11 @@ a {
 
 .button {
   display: flex;
+  align-items: center;
   width: 132px;
-  height: 49px;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.13px;
-  text-align: center;
   padding: 15px 16px 15px 16px;
   gap: 10px;
   border-radius: 0px 15px 15px 0px;
@@ -253,7 +254,7 @@ a {
   text-align: center;
 }
 
-.filters {
+.filters__columns {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -281,8 +282,8 @@ a {
 }
 
 .filter-logo {
-  width: 22px;
-  height: 22px;
+  color: var(--main-color);
+  font-size: 20px;
 }
 
 .family-filter {
@@ -344,8 +345,7 @@ a {
 }
 
 .size-logo-info {
-  margin-bottom: 10px;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 50%;
   border: 2px solid #deebff;
 }
@@ -535,19 +535,13 @@ a {
   }
 
   .filters-menu-title {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
     text-align: left;
     margin: 0px;
-  }
-
-  .filters {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 50px;
-    gap: 15px;
   }
 
   .infobar {
@@ -697,27 +691,23 @@ a {
   }
 
   .search_bar {
-    width: 285px;
-    margin-left: 20px;
+    width: calc(100% - 20px);
+    margin: 30px 0px 0px 10px;
   }
 
   .search_text {
-    width: 200px;
-    border-right: 0px;
-    border-left: 0px;
-    border-top-width: 1px;
+    width: calc(100% - 99px);
   }
 
   .button {
     width: 49px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    position: relative;
-    right: 15px;
   }
 
   .phone-search-logo {
     display: initial;
+    color: white;
   }
 
   .text-button-search {
@@ -738,9 +728,17 @@ a {
 
   .filters {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters__columns {
+    column-count: 2;
+    display: initial;
+  }
+
+  .filter-settings {
+    margin-bottom: 20px;
   }
 
   .economical-filter,
@@ -752,8 +750,9 @@ a {
   }
 
   .infobar {
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 20px 10px;
     margin-bottom: 10px;
+    margin-top: 0;
   }
 
   .hebergements-and-populaires section {
