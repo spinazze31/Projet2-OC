@@ -737,11 +737,12 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
   }
 
   .filters__column {
     display: flex;
-    gap: 12px;
+    gap: 15px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
