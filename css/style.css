@@ -155,8 +155,14 @@ a {
   color: var(--main-color);
 }
 
-.line {
+.line:hover {
   width: 112px;
+  padding-top: 12px;
+  border-top: solid var(--main-color) 3px;
+}
+
+.grey_line:hover {
+  width: 63px;
   padding-top: 12px;
   border-top: solid var(--main-color) 3px;
 }
@@ -368,13 +374,13 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
   margin-top: 30px;
 }
 
 .card-size {
-  width: 250px;
-  height: 225px;
+  width: 30%;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -658,21 +664,39 @@ a {
     gap: 0;
   }
 
-  .line {
+  #home {
     display: flex;
     justify-content: center;
     width: 50%;
+    padding-top: 10px;
     padding-bottom: 20px;
-    border-bottom: solid var(--main-color) 4px;
     border-top: none;
   }
 
-  .grey_line {
+  .line {
+    border-bottom: solid var(--main-bg-color) 4px;
+  }
+
+  .line:hover {
+    width: 50%;
+    border-bottom: solid var(--main-color) 4px;
+  }
+
+  #activity {
     display: flex;
     justify-content: center;
     width: 50%;
     padding: 10px 0px 20px 0px;
+    border-top: none;
+  }
+
+  .grey_line {
     border-bottom: solid var(--main-bg-color) 4px;
+  }
+
+  .grey_line:hover {
+    width: 50%;
+    border-bottom: solid var(--main-color) 4px;
   }
 
   .menu-area {
@@ -737,6 +761,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: calc(100% - 20px);
   }
 
   .filters__column {
@@ -751,12 +776,14 @@ a {
   .family-filter,
   .romantic-filter,
   .nugget-filter {
-    width: 162.5px;
+    width: 50%;
     font-size: 14px;
+    justify-content: center;
   }
 
   .family-filter {
-    gap: 16px;
+    gap: 13px;
+    padding-right: 42px;
   }
 
   .romantic-filter {
